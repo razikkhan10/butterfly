@@ -1,0 +1,42 @@
+@media (max-width: 767px){
+    .container{
+        width: 100%;
+    }
+    .top-head{
+       flex-direction: column;
+       position: relative;
+    }
+    #mychk{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #chk{
+        display: block;
+        position: absolute;
+        top: 60px;
+    }
+    #logo{
+        text-align: center;
+    }
+    .top-head ul{
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 0;
+        background-color:cadetblue;
+        left: -767px;
+        transition: all 0.5s;
+    }
+    .top-head ul li{
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+    #chk:checked ~ ul{
+        left: 0;
+    }
+    
+}
